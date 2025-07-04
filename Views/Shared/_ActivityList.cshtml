@@ -1,0 +1,37 @@
+﻿@model IEnumerable<PPSProject.Models.Activity>
+
+<table class="table align-middle">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Title</th>
+            <th style="width:130px"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var a in Model)
+        {
+            <tr id="row-@a.Id" class="@(a.IsFavourite ? "table-warning" : (a.IsReadLater ? "table-secondary" : ""))">
+                <td>@a.DateUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                <td><span class="badge bg-info">@a.Type</span></td>
+                <td>
+                    <a href="@a.Url" target="_blank">@a.Title</a><br />
+                    <small class="text-muted">@a.Description</small>
+                </td>
+                <td class="text-end">
+                    <button class="btn btn-sm btn-outline-secondary me-2"
+                            title="Read later"
+                            onclick="toggle('@Url.Action("ToggleReadLater")', @a.Id, '📑')">
+                        @(a.IsReadLater ? "📑" : "🗒️")
+                    </button>
+                    <button class="btn btn-sm btn-outline-warning"
+                            title="Favourite"
+                            onclick="toggle('@Url.Action("ToggleFavourite")', @a.Id, '⭐')">
+                        @(a.IsFavourite ? "⭐" : "☆")
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
