@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\views\\activities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:views\\activities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -31,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:services\\githubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\services\\igithubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:services\\igithubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -54,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "_ActivityList.cshtml",
               "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Shared\\_ActivityList.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ActivityList.cshtml",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Filtered.cshtml",
               "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Activities\\Filtered.cshtml",
               "RelativeDocumentMoniker": "Views\\Activities\\Filtered.cshtml",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -90,12 +90,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T06:37:50.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T06:37:50.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -103,12 +102,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowD4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T06:34:10.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T06:34:10.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Activities\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Activities\\Index.cshtml",
@@ -121,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GitHubService.cs",
               "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Services\\GitHubService.cs",
               "RelativeDocumentMoniker": "Services\\GitHubService.cs",
@@ -133,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ActivitiesController.cs",
               "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Controllers\\ActivitiesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ActivitiesController.cs",
@@ -141,7 +139,19 @@
               "RelativeToolTip": "Controllers\\ActivitiesController.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAwwBgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T06:25:07.577Z",
+              "WhenOpened": "2025-07-04T06:25:07.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T06:06:23.46Z",
               "EditorCaption": ""
             },
             {
@@ -155,18 +165,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T06:22:43.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T06:06:23.46Z"
             },
             {
               "$type": "Document",
