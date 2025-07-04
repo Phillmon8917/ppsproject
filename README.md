@@ -23,4 +23,4 @@ This is PPSProject, a simple ASP.NET Core MVC web app that shows your latest Git
 ## Running the project
 
 1. simply visit:  
-   `https://github.com/your-username/ppsproject.git`  
+   'https://ppsproject.onrender.com/Activities'
