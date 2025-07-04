@@ -1,0 +1,127 @@
+﻿@model IEnumerable<PPSProject.Models.Activity>
+@{
+    ViewData["Title"] = "GitHub activity";
+    var page = (int)ViewBag.Page;
+    var pages = (int)ViewBag.Pages;
+    var search = (string)ViewBag.Search;
+}
+@functions {
+    string SortLink(string column)
+    {
+        // Toggle direction if clicking the same column again
+        var currentSort = ViewBag.Sort as string ?? "date";
+        var currentDir = ViewBag.Dir as string ?? "desc";
+        var nextDir = (currentSort == column && currentDir == "asc") ? "desc" : "asc";
+
+        return Url.Action("Index", new
+        {
+            sort = column,
+            dir = nextDir,
+            page = ViewBag.Page,     // keeping the current page here
+            search = ViewBag.Search   // keep search term functionality
+        });
+    }
+
+    string DirArrow(string column)
+    {
+        var currentSort = ViewBag.Sort as string ?? "date";
+        var currentDir = ViewBag.Dir as string ?? "desc";
+        if (currentSort != column) return "";
+        return currentDir == "asc" ? "↑" : "↓";
+    }
+}
+
+
+<div class="mb-3 d-flex justify-content-between align-items-center">
+    <div>
+        <a class="btn btn-outline-warning me-2" href="@Url.Action("Favourites")">⭐ Favourites</a>
+        <a class="btn btn-outline-secondary" href="@Url.Action("ReadLater")">📑 Read Later</a>
+    </div>
+</div>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container pt-4">
+
+    <h1 class="mb-3">Latest GitHub activity</h1>
+
+    <form class="input-group mb-4" method="get">
+        <input name="search" value="@search" class="form-control" placeholder="Search commits, PRs, issues..." />
+        <button class="btn btn-primary">Search</button>
+    </form>
+
+
+    <table class="table align-middle">
+        <thead>
+            <tr>
+                <th>
+                    <a href="@SortLink("date")" class="text-reset text-decoration-none" aria-label="Sort by date">
+                        Date @DirArrow("date")
+                    </a>
+                </th>
+                <th>
+                    <a href="@SortLink("type")" class="text-reset text-decoration-none" aria-label="Sort by type">
+                        Type @DirArrow("type")
+                    </a>
+                </th>
+
+                <th>Title</th>
+                <th style="width:130px;"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var a in Model)
+            {
+                <tr id="row-@a.Id">
+                    <td>@a.DateUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>@a.Type</td>
+                    <td>
+                        <a href="@a.Url" target="_blank">@a.Title</a><br />
+                        <small class="text-muted">@a.Description</small>
+                    </td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-outline-secondary me-2"
+                                title="Read later"
+                                onclick="toggle('@Url.Action("ToggleReadLater")', @a.Id, '📑')">
+                            @(a.IsReadLater ? "📑" : "🗒️")
+                        </button>
+
+                        <button class="btn btn-sm btn-outline-warning"
+                                title="Favourite"
+                                onclick="toggle('@Url.Action("ToggleFavourite")', @a.Id, '⭐')">
+                            @(a.IsFavourite ? "⭐" : "☆")
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- pagination -->
+    <nav>
+        <ul class="pagination">
+            @for (var i = 1; i <= pages; i++)
+            {
+                <li class="page-item @(i == page ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = i, search })">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+
+<script>
+    async function toggle(url, id, icon) {
+        const res = await fetch(url + '/' + id, { method: 'POST' });
+        if (!res.ok) return alert('Failed');
+        const data = await res.json();
+
+        const btns = document.querySelectorAll('#row-' + id + ' button');
+        btns.forEach(b => {
+            if (b.innerText.includes(icon)) b.innerText = (b.innerText.trim() === icon ? icon : icon);
+        });
+    }
+
+</script>

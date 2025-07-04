@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\views\\activities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:views\\activities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\views\\shared\\_activitylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:views\\shared\\_activitylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\views\\activities\\filtered.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:views\\activities\\filtered.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\services\\githubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:services\\githubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\services\\igithubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:services\\igithubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|c:\\users\\kamogelo motsinoni\\source\\repos\\ppsproject\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5672BCDC-0BCA-4E96-B9AB-61C80E739A4C}|PPSProject.csproj|solutionrelative:models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ActivityList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Shared\\_ActivityList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ActivityList.cshtml",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Shared\\_ActivityList.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ActivityList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-04T07:12:50.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Filtered.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Activities\\Filtered.cshtml",
+              "RelativeDocumentMoniker": "Views\\Activities\\Filtered.cshtml",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Activities\\Filtered.cshtml",
+              "RelativeToolTip": "Views\\Activities\\Filtered.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-04T07:10:53.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T06:37:50.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowD4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-04T06:34:10.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Activities\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Activities\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Views\\Activities\\Index.cshtml",
+              "RelativeToolTip": "Views\\Activities\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-04T06:30:54.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GitHubService.cs",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Services\\GitHubService.cs",
+              "RelativeDocumentMoniker": "Services\\GitHubService.cs",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Services\\GitHubService.cs",
+              "RelativeToolTip": "Services\\GitHubService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T06:28:54.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActivitiesController.cs",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Controllers\\ActivitiesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ActivitiesController.cs",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Controllers\\ActivitiesController.cs",
+              "RelativeToolTip": "Controllers\\ActivitiesController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwBgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T06:25:07.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IGitHubService.cs",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Services\\IGitHubService.cs",
+              "RelativeDocumentMoniker": "Services\\IGitHubService.cs",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Services\\IGitHubService.cs",
+              "RelativeToolTip": "Services\\IGitHubService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T06:22:43.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T06:06:23.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Database\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Database\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Database\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Database\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwB0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T05:58:51.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Activity.cs",
+              "DocumentMoniker": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Models\\Activity.cs",
+              "RelativeDocumentMoniker": "Models\\Activity.cs",
+              "ToolTip": "C:\\Users\\Kamogelo Motsinoni\\source\\repos\\PPSProject\\Models\\Activity.cs",
+              "RelativeToolTip": "Models\\Activity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T05:56:12.74Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

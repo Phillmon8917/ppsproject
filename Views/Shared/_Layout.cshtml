@@ -1,0 +1,131 @@
+﻿@*
+    _Layout.cshtml ― polished navbar + persistent dark mode
+*@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PPSProject</title>
+
+    <!-- Bootstrap + site CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PPSProject.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav id="mainNav"
+             class="navbar navbar-expand-lg shadow-sm px-3 py-2 mb-3 rounded-bottom"
+             style="transition: background .3s ease;">
+            <div class="container-fluid">
+                <a id="nav-brand" class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-github"></i> PPSProject
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                        aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="nav-activities" class="nav-link fw-semibold"
+                               asp-area="" asp-controller="Activities" asp-action="Index">
+                                📝 Activities
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- 🌙 Dark‑mode switch -->
+                    <div class="form-check form-switch d-flex align-items-center">
+                        <input class="form-check-input me-2" type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+                        <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const saved = localStorage.getItem("darkMode") === "true";
+            if (saved) document.getElementById("darkModeToggle").checked = true;
+            applyDarkMode(saved);
+        });
+
+        function toggleDarkMode() {
+            const enabled = document.getElementById("darkModeToggle").checked;
+            localStorage.setItem("darkMode", enabled);
+            applyDarkMode(enabled);
+        }
+
+        function applyDarkMode(enabled) {
+            // Body
+            document.body.classList.toggle("bg-dark", enabled);
+            document.body.classList.toggle("text-light", enabled);
+
+            // Navbar
+            const nav = document.getElementById("mainNav");
+            nav.classList.remove("navbar-light", "navbar-dark", "bg-white", "bg-gradient");
+            if (enabled) {
+                nav.classList.add("navbar-dark", "bg-gradient");
+                nav.style.background = "linear-gradient(90deg,#0d6efd,#6610f2)";
+            } else {
+                nav.classList.add("navbar-light", "bg-white");
+                nav.style.background = "";
+            }
+
+            // Brand + link colors
+            ["nav-brand", "nav-activities"].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.classList.toggle("text-light", enabled);
+                    el.classList.toggle("text-dark", !enabled);
+                }
+            });
+
+            // Tables
+            document.querySelectorAll("table").forEach(t =>
+                t.classList.toggle("table-dark", enabled)
+            );
+        }
+
+        async function toggle(url, id, icon) {
+            const res = await fetch(url + '/' + id, { method: 'POST' });
+            if (!res.ok) { alert('Failed'); return; }
+
+            const data = await res.json();
+            const row = document.getElementById('row-' + id);
+
+            // 1. Update icon
+            row.querySelectorAll('button').forEach(btn => {
+                if (btn.innerText.includes(icon)) {
+                    if (icon === "⭐") btn.innerText = data.isFavourite ? "⭐" : "☆";
+                    if (icon === "📑") btn.innerText = data.isReadLater ? "📑" : "🗒️";
+                }
+            });
+
+            // 2. Highlight row
+            row.classList.remove("table-warning", "table-secondary");
+            if (data.isFavourite) row.classList.add("table-warning");
+            else if (data.isReadLater) row.classList.add("table-secondary");
+        }
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
